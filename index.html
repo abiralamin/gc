@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graduation Count Down</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+      <div class="card">
+        <p class="subtitle">Excitement is building...</p>
+        <h1>Graduation Count Down</h1>
+
+        <section class="countdown" aria-live="polite">
+          <div class="unit">
+            <span id="months">0</span>
+            <small>Months</small>
+          </div>
+          <div class="unit">
+            <span id="days">0</span>
+            <small>Days</small>
+          </div>
+          <div class="unit">
+            <span id="hours">0</span>
+            <small>Hours</small>
+          </div>
+          <div class="unit">
+            <span id="minutes">0</span>
+            <small>Minutes</small>
+          </div>
+          <div class="unit">
+            <span id="seconds">0</span>
+            <small>Seconds</small>
+          </div>
+        </section>
+
+        <p id="target-date" class="target-date">Target: 10 February 2027</p>
+        <p id="message" class="message"></p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

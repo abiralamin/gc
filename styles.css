@@ -85,6 +85,27 @@ h1 {
   gap: 14px;
 }
 
+.total-countdown {
+  margin-top: 16px;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.total-countdown .unit:nth-child(1) {
+  grid-column: 2 / span 2;
+}
+
+.total-countdown .unit:nth-child(2) {
+  grid-column: 4 / span 2;
+}
+
+.total-countdown .unit:nth-child(3) {
+  grid-column: 6 / span 2;
+}
+
+.total-countdown .unit:nth-child(4) {
+  grid-column: 8 / span 2;
+}
+
 .unit {
   position: relative;
   overflow: hidden;
@@ -126,6 +147,10 @@ h1 {
   font-size: 0.9rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.total-days-unit span {
+  font-size: clamp(2rem, 4.4vw, 3.6rem);
 }
 
 .target-date {
@@ -188,6 +213,10 @@ h1 {
     grid-template-columns: repeat(5, minmax(90px, 1fr));
     gap: 10px;
   }
+
+  .total-countdown {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 700px) {
@@ -214,6 +243,11 @@ h1 {
   .countdown {
     grid-template-columns: repeat(5, minmax(56px, 1fr));
     gap: 8px;
+  }
+
+  .total-countdown {
+    margin-top: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .unit {
@@ -268,6 +302,10 @@ h1 {
   .countdown {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 6px;
+  }
+
+  .total-countdown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .unit span {

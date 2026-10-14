@@ -1,4 +1,4 @@
-const targetDate = new Date("2027-02-10T00:00:00");
+const targetDate = new Date("2027-02-01T00:00:00");
 
 const monthsElement = document.getElementById("months");
 const daysElement = document.getElementById("days");
